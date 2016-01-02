@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="technoCircles">
+<head lang="en">
+    <meta charset="utf-8">
+    <!-- Use latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome beginners ...</title>
+    <meta name="description" content="">
+    <!-- set the page size of the devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/page.style.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <div ng-include="'shared/include/header.html'"></div>
+
+
+    <!-- Page Content (including side navigation and page content -->
+    <div class="row row-fluid page-content">
+        <div class="sidebar col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <!-- Navigation -->
+            <div ng-include="'shared/include/navigation.html'"></div>
+        </div>
+        <div class="content col-lg-10 col-md-9 col-sm-9 col-xs-12">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">Footer content place here ...<br /><br /><br /><br /><br /><br /></div>
+
+</body>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="app/bower_components/angular/angular.js"></script>
+<script src="app/bower_components/angular-route/angular-route.js"></script>
+
+<script src="app/app.module.js"></script>
+<script src="app/components/home/controllers/homeCtrl.js"></script>
+<script src="app/components/about/controllers/aboutCtrl.js"></script>
+<script src="app/components/contact/controllers/contactCtrl.js"></script>
+</html>

@@ -1,0 +1,49 @@
+body {
+    padding: 20px 0 0 0;
+    /*padding because of nav bar fixed top class*/
+    /*border: 5px solid Green;*/
+}
+html, body{
+    height: 100%;
+}
+
+.page-header {
+    /*border-bottom: 1px solid gray;*/
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 15px;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.page-content {
+    width:100.95%;
+    min-height: 85%;
+    height: auto;
+    padding-bottom: 20px;
+    /*border: 1px solid Red;*/
+}
+.page-content .sidebar {
+    min-height: 85vh;
+    height: auto;
+    border-top: 1px solid gray;
+    padding-left: 25px;
+    background-color: #e2e2e2;
+    /*border: 1px solid gray;*/
+    box-shadow: 3px 3px 3px #999;
+}
+.page-content .content {
+    min-height: 80vh;
+    height: auto;
+    padding-top: 15px;
+    /*border: 2px solid red;*/
+}
+.page-footer {
+    border-top: 1px solid gray;
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    border-color: #080808;
+    color: #9d9d9d;
+}
